@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attakorn Duanjinda | หน้าแรก</title><link rel="stylesheet" href="style.css">
+</head><body>
+  <header class="navbar" id="top">
+    <a class="brand" href="index.html">Attakorn Duanjinda</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-link active"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg><span>หน้าแรก</span></a>
+      <a href="about.html" class="nav-link "><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg><span>ประวัติส่วนตัว</span></a>
+      <a href="works.html" class="nav-link "><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></svg><span>ผลงาน</span></a>
+    </nav>
+  </header>
+
+<main>
+  <section class="banner-only"><img class="profile-banner-full" src="images/NEWPROFILE.png" alt="Welcome to my Profile"></section>
+
+  <section id="home" class="hero section">
+    <div class="hero-content">
+      <p class="eyebrow">WELCOME TO MY WEBSITE</p>
+      <h1>สวัสดีครับ ผม <span>Attakorn Duanjinda</span></h1>
+      <p class="hero-description">
+        ยินดีต้อนรับสู่เว็บไซต์ส่วนตัวของผม เว็บไซต์นี้รวบรวมข้อมูลแนะนำตัว
+        ประวัติส่วนตัว และใบงานต่าง ๆ ที่ได้จัดทำระหว่างการเรียน
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="about.html">รู้จักผมมากขึ้น</a>
+        <a class="button secondary" href="works.html">ดูผลงาน</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-label="ภาพแนะนำตัว">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+      <div class="profile-placeholder">
+        <img class="hero-avatar" src="images/Profile.png.webp" alt="รูปถ่ายของอรรถกร ดวงจินดา">
+        <h2>Attakorn</h2>
+        <p>Student • IT</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="homepage-gallery">
+    <div class="feature-row">
+      <aside class="profile-card">
+        <div class="photo-placeholder portrait-placeholder">
+          <img src="images/Profile.png.webp" alt="รูปโปรไฟล์">
+        </div>
+        <div class="profile-caption">
+          <h2>นาย อรรถกร ดวงจินดา</h2>
+          <p>นักศึกษา • แผนกเทคโนโลยีสารสนเทศ</p>
+        </div>
+      </aside>
+
+      <div class="carousel-area">
+        <div class="main-slide" id="mainSlide">
+          <img id="slideImage" src="images/img1.jpg" alt="รูปภาพสไลด์ 1">
+          <button class="slide-control previous" id="previousSlide" type="button" aria-label="รูปก่อนหน้า">&#10094;</button>
+          <button class="slide-control next" id="nextSlide" type="button" aria-label="รูปถัดไป">&#10095;</button>
+        </div>
+        <div class="carousel-dots" aria-label="ตัวเลือกภาพสไลด์">
+          <button class="dot active" data-slide="1" aria-label="รูปที่ 1"></button>
+          <button class="dot" data-slide="2" aria-label="รูปที่ 2"></button>
+          <button class="dot" data-slide="3" aria-label="รูปที่ 3"></button>
+          <button class="dot" data-slide="4" aria-label="รูปที่ 4"></button>
+          <button class="dot" data-slide="5" aria-label="รูปที่ 5"></button>
+          <button class="dot" data-slide="6" aria-label="รูปที่ 6"></button>
+          <button class="dot" data-slide="7" aria-label="รูปที่ 7"></button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html">Attakorn Duanjinda</a>
+        <p>เว็บไซต์ส่วนตัวและผลงานระหว่างการเรียน</p>
+      </div>
+      <nav class="footer-nav" aria-label="เมนูส่วนท้าย">
+        <a href="index.html">หน้าแรก</a>
+        <a href="works.html">ผลงาน</a>
+        <a href="about.html">ประวัติส่วนตัว</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Attakorn Duanjinda</p>
+      <a href="#top">กลับขึ้นด้านบน ↑</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body></html>
