@@ -517,6 +517,97 @@ a {
     line-height: 1.7
 }
 
+.work-image-list {
+    display: grid;
+    gap: 14px
+}
+
+.work-pdf-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    background: #f0edff;
+    color: var(--purple-dark);
+    font-weight: 600
+}
+
+.work-pdf-link:hover {
+    background: #e6e1ff
+}
+
+.work-image-button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    border-radius: 12px;
+    background: #f3f4f8;
+    cursor: zoom-in
+}
+
+.work-image-button img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain
+}
+
+.work-image-button:focus-visible,
+.image-preview-close:focus-visible {
+    outline: 3px solid var(--purple);
+    outline-offset: 3px
+}
+
+.image-preview-dialog {
+    position: fixed;
+    max-width: min(1100px, 95vw);
+    max-height: 95vh;
+    padding: 48px 20px 16px;
+    overflow: auto;
+    border: 0;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 20px 70px #10152f40
+}
+
+.image-preview-dialog::backdrop {
+    background: #10152fcc
+}
+
+.image-preview-dialog img {
+    display: block;
+    max-width: 100%;
+    max-height: 78vh;
+    margin: 0 auto;
+    object-fit: contain
+}
+
+.image-preview-dialog p {
+    margin: 12px 0 0;
+    color: var(--text);
+    text-align: center
+}
+
+.image-preview-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 50%;
+    background: #f0edff;
+    color: var(--navy);
+    font: inherit;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer
+}
+
 .card-note {
     font-size: .83rem;
     color: #8a8eaa

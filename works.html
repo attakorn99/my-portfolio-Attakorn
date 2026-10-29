@@ -10,12 +10,46 @@
   </header>
 
 <main>
-  <section class="page-banner"><p class="eyebrow">MY WORKS</p><h1>ผลงานของฉัน</h1><p>พื้นที่รวบรวมใบงานและโปรเจกต์ที่ทำระหว่างการเรียน</p></section>
+  <section class="banner-only"><img class="profile-banner-full" src="images/NEWPROFILE.png" alt="แบนเนอร์ผลงาน"></section>
   <section class="works-grid section">
-    <article class="info-card"><div class="card-icon">01</div><h3>ใบงานที่ 1</h3><p>แนะนำตัวและสำรวจเว็บไซต์ที่สนใจ</p><span class="card-note">เพิ่มไฟล์หรือรายละเอียดใบงานได้ที่นี่</span></article>
-    <article class="info-card"><div class="card-icon">02</div><h3>ใบงานที่ 2</h3><p>เนื้อหาการเรียนและแบบฝึกหัด</p><span class="card-note">เพิ่มไฟล์หรือรายละเอียดใบงานได้ที่นี่</span></article>
-    <article class="info-card"><div class="card-icon">03</div><h3>โปรเจกต์</h3><p>ผลงานเว็บไซต์และงานเขียนโปรแกรม</p><span class="card-note">เพิ่มผลงานของคุณได้ตามต้องการ</span></article>
+    <article class="info-card">
+      <div class="card-icon">01</div>
+      <h3>ใบงานที่ 1</h3>
+      <p>ตัวอย่างหน้าแรกของใบงาน คลิกที่ภาพเพื่อขยาย</p>
+      <button class="work-image-button" type="button" data-image="images/assignment-1-preview.jpg" data-alt="หน้าแรกของใบงานที่ 1: สร้างสไลท์ใหม่ตามแบบนักศึกษาบทที่ 1" aria-label="ดูภาพตัวอย่างใบงานที่ 1 ขนาดเต็ม">
+        <img src="images/assignment-1-preview.jpg" alt="หน้าแรกของใบงานที่ 1: สร้างสไลท์ใหม่ตามแบบนักศึกษาบทที่ 1">
+      </button>
+      <a class="work-pdf-link" href="PDF/สร้างสไลท์ใหม่ตามแบบนักศึกษาบทที่%201.pdf" target="_blank" rel="noopener noreferrer">
+        เปิด PDF ทั้ง 16 หน้า <span aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="info-card">
+      <div class="card-icon">02</div>
+      <h3>Mind Map บทที่ 1</h3>
+      <p>คลิกที่ภาพเพื่อดูขนาดเต็ม</p>
+      <button class="work-image-button" type="button" data-image="images/Mind%20Map%20บทที่%201.png" data-alt="Mind Map บทที่ 1" aria-label="ดู Mind Map บทที่ 1 ขนาดเต็ม">
+        <img src="images/Mind%20Map%20บทที่%201.png" alt="Mind Map บทที่ 1">
+      </button>
+    </article>
+    <article class="info-card">
+      <div class="card-icon">03</div>
+      <h3>คำตอบจากหน่วยที่ 1</h3>
+      <p>คลิกที่ภาพเพื่อดูขนาดเต็ม</p>
+      <div class="work-image-list">
+        <button class="work-image-button" type="button" data-image="images/ตอบคำถามจากหน่วยที่%201%20ตอนที่%201.png" data-alt="ตอบคำถามจากหน่วยที่ 1 ตอนที่ 1" aria-label="ดูคำตอบจากหน่วยที่ 1 ตอนที่ 1 ขนาดเต็ม">
+          <img src="images/ตอบคำถามจากหน่วยที่%201%20ตอนที่%201.png" alt="ตอบคำถามจากหน่วยที่ 1 ตอนที่ 1">
+        </button>
+        <button class="work-image-button" type="button" data-image="images/ตอบคำถามจากหน่วยที่%201%20ตอนที่%202.png" data-alt="ตอบคำถามจากหน่วยที่ 1 ตอนที่ 2" aria-label="ดูคำตอบจากหน่วยที่ 1 ตอนที่ 2 ขนาดเต็ม">
+          <img src="images/ตอบคำถามจากหน่วยที่%201%20ตอนที่%202.png" alt="ตอบคำถามจากหน่วยที่ 1 ตอนที่ 2">
+        </button>
+      </div>
+    </article>
   </section>
+  <dialog class="image-preview-dialog" id="imagePreviewDialog" aria-label="ดูภาพขนาดเต็ม">
+    <button class="image-preview-close" id="closeImagePreview" type="button" aria-label="ปิดภาพ">×</button>
+    <img id="imagePreview" alt="">
+    <p id="imagePreviewCaption"></p>
+  </dialog>
 </main>
   <footer class="footer">
     <div class="footer-main">

@@ -3,6 +3,28 @@ const navLinks=document.getElementById('navLinks');
 menuToggle.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));});
 document.querySelectorAll('.nav-link').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');}));
 document.getElementById('year').textContent=new Date().getFullYear();
+const imagePreviewDialog = document.getElementById("imagePreviewDialog");
+if (imagePreviewDialog) {
+const imagePreview = document.getElementById("imagePreview");
+const imagePreviewCaption = document.getElementById("imagePreviewCaption");
+
+document.querySelectorAll(".work-image-button").forEach(button => {
+    button.addEventListener("click", () => {
+        imagePreview.src = button.dataset.image;
+        imagePreview.alt = button.dataset.alt;
+        imagePreviewCaption.textContent = button.dataset.alt;
+        imagePreviewDialog.showModal();
+    });
+});
+
+document.getElementById("closeImagePreview").addEventListener("click", () => {
+    imagePreviewDialog.close();
+});
+
+imagePreviewDialog.addEventListener("click", event => {
+    if (event.target === imagePreviewDialog) imagePreviewDialog.close();
+});
+}
 const slideImage = document.getElementById("slideImage");
 const dots = document.querySelectorAll(".carousel-dots .dot");
 const carousel = document.querySelector(".carousel-area");
